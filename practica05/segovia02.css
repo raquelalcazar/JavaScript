@@ -1,0 +1,56 @@
+div * span{
+	font-weight:bold;
+	text-decoration:underline;
+}
+
+div + h1{ 
+	text-decoration:underline;
+	font-size:32pt;
+	color: purple;
+	text-shadow: 2px -2px chocolate, 3px -3px rgb(164, 35, 18), 4px -4px hsl(342, 100%, 50%);
+}
+
+div h2{
+	text-decoration:underline;
+	color:lime;
+	text-shadow: -2px -2px 2px coral, -3px -3px  2px cyan;
+}
+
+div p{
+	font-family:Calibri;
+	font-size:14pt;
+}
+
+div[id]{
+	font-family:Century;
+	font-size:10pt;
+	color: rgb(176, 51, 174);
+	text-transform:uppercase;
+}
+
+[class="posicion"]{
+	font-family: Cambria;
+	font-size:120%;
+	font-style: italic;
+	color: rgb( 29, 141, 130);
+}
+
+div[class~="situado"]{
+	font-family:Arial;
+	font-size:11pt;
+	color:olive;
+}
+
+[class^="pla"]{
+	font-weight:bold;
+	font-style:italic;
+}
+
+[class$="o"]{
+	text-decoration:underline;
+}
+
+[class*="teri"]{
+	color:rgb(248, 118, 32);
+	text-transform:lowercase;
+}
