@@ -1,0 +1,27 @@
+body{
+	background-image: url("../imagenes/torre bujaco.jpg");
+	background-repeat:repeat-x;
+}
+
+:root{
+	font-family: "Verdana";
+	color:#2F7210;
+	font-size: 8pt;
+}
+
+@media (min-width:525px){
+	
+	:root{
+		font-size: 10pt;
+	}
+	
+}
+
+@media (min-width:1101px){
+	
+	:root{
+		font-size: 12pt;
+	}
+	
+}
+
