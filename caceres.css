@@ -1,0 +1,41 @@
+:root{
+	font-family:"Lucida Sans";
+	color:#690C26;
+	font-size:11pt;
+	font-weight:bold;
+}
+
+@media (min-width:600px){
+	
+	:root{
+		font-size: 12pt;
+	}
+	
+}
+
+@media (min-width:1201px){
+	
+	:root{
+		font-size: 13pt;
+	}
+	
+}
+
+.c1 div{
+	background-image: url("../imagenes/torre bujaco.jpg");
+	background-clip:content-box;
+	text-decoration:line-through;
+	overflow:hidden;
+}
+
+.c2 div{
+	background-image: url("../imagenes/palacio ovando.jpg");
+	background-clip:padding-box;
+	overflow-x:hidden;
+}
+
+.c3 div{
+	background-image: url("../imagenes/iglesia santiago.jpg");
+	background-clip:border-box;
+	overflow-y:hidden;
+}
