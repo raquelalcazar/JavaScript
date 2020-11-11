@@ -1,0 +1,46 @@
+
+@font-face{
+	font-family:"Nyala";
+	src: url(../tipoletra/nyala-2.ttf);
+}
+
+:root{
+	font-family: "Nyala";
+	color: DarkRed;
+	text-decoration: underline;
+	font-style: italic;
+	font-size: 10pt;
+	background-image: url("../imagenes/catedral leon.jpg"), url("../imagenes/casa botines.jpg"), url("../imagenes/convento san marcos.jpg");
+	
+	background-repeat: no-repeat;
+	background-size:cover;
+	background-attachment:fixed;
+}
+
+@media (min-width:625px){
+	
+	:root{
+		font-size: 11pt;
+	}
+	
+}
+
+@media (min-width:1251px){
+	
+	:root{
+		font-size: 13pt;
+	}
+	
+}
+@font-face{
+	font-family:"latha";
+	src: url(../tipoletra/Latha.ttf);
+}
+
+:root{
+	font-family:"latha";
+	font-size:12pt;
+	text-transform:lowercase;
+	text-indent: 10ch;
+	color:DarkSlateGray;
+}
