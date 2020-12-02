@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+	<head>
+		<meta name="author" content="Raquel Alcázar Mesia" />
+		<meta charset="utf-8" />
+		<title>Práctica 2</title>
+		<link rel="stylesheet" type="text/css" href="./css/formularioDOM2.css">
+		<script type="text/javascript" src="./js/practicaDOM2ExpReg.js">
+		</script>
+	</head>
+	<body>
+        <h1>Datos de Registro de Usuario</h1>
+		<form id="registroUsuario">
+			<div>
+				<fieldset class="nombreApellidos">
+					<label for="apellidos">Apellidos</label>
+					<input type="text" name="apellidos" id="apellidos"/>
+					<label class ="error" id="errorApellidos"></label></br>
+					
+					<label for="nombre">Nombre</label>
+					<input type="text" name="nombre" id="nombre"/>
+					<label class ="error" id="errorNombre"></label></br>
+				</fieldset>
+			</div>
+			
+            </br>
+			
+			<div>
+				<fieldset class="direccion">
+					<legend>Dirección</legend>
+					
+					<label for="tipoVia">Tipo de Vía</label>
+					<input type="text" name="tipoVia" id="tipoVia"/>
+					<label class ="error" id="errorTipoVia"></label></br>
+					
+					<label for="nombreVia">Nombre de la vía</label>
+					<input type="text" name="nombreVia" id="nombreVia"/>
+					<label class ="error" id="errorNombreVia"></label></br>
+					
+					<label for="numero">Número</label>
+					<input type="text" name="numero" id="numero"/>
+					<label class ="error" id="errorNumero"></label></br>
+					
+					<label for="portal">Portal</label>
+					<input type="text" name="portal" id="portal"/>
+					<label class ="error" id="errorPortal"></label></br>
+					
+					<label for="piso">Piso o planta</label>
+					<input type="text" name="piso" id="piso"/>
+					<label class ="error" id="errorPiso"></label></br>
+					
+					<label for="puerta">Puerta</label>
+					<input type="text" name="puerta" id="puerta"/>
+					<label class ="error" id="errorPuerta"></label></br>
+					
+					<label for="localidad">Localidad</label>
+					<input type="text" name="localidad" id="localidad"/>
+					<label class ="error" id="errorLocalidad"></label></br>
+					
+					<label for="cp">Código Postal</label>
+					<input type="text" name="cp" id="cp"/>
+					<label class ="error" id="errorCP"></label></br>
+					
+					<label for="provincia">Provincia</label>
+					<input type="text" name="provincia" id="provincia"/>
+					<label class ="error" id="errorProvincia"></label></br>
+					
+					<label for="pais">País o Estado</label>
+					<input type="text" name="pais" id="pais"/>
+					<label class ="error" id="errorPais"></label></br>
+					
+				</fieldset></br>
+				
+			</div>
+			
+            </br>
+			
+            <div>
+				<fieldset class="trabajo">
+					<legend>Trabajo</legend>
+					
+					<label for="puestoTrabajo">Puesto de trabajo</label>
+				    <input type="text" name="puestoTrabajo" id="puestoTrabajo"/>
+					<label class ="error" id="errorPuestoTrabajo"></label></br>
+					
+				    <label for="nombreEmpresa">Nombre de la empresa</label>
+				    <input type="text" name="nombreEmpresa" id="nombreEmpresa"/>
+					<label class ="error" id="errorNombreEmpresa"></label></br>
+					
+				    <label for="categoria">Categoría profesional</label>
+                    <input type="text" name="categoria" id="categoria"/>
+					<label class ="error" id="errorCategoria"></label></br>
+		
+				</fieldset>
+			
+            </div>
+            </br>
+			
+			<div>
+				<fieldset class="aficionesField">
+					<legend>Aficiones</legend>
+					<input type="checkbox" value="musica" name="aficiones" id="aficiones"/>Música 
+                    <input type="checkbox"  value="viajar" name="aficiones" id="aficiones"/> Viajar 
+					<input type="checkbox" value="leer" name="aficiones" id="aficiones"/> Leer
+                    <input type="checkbox" value="deporte" name="aficiones" id="aficiones"/>Deporte 
+					<input type="checkbox" value="fotos" name="aficiones" id="aficiones"/> Fotos 
+                    <input type="checkbox" value="videos" name="aficiones" id="aficiones"/> Vídeos
+                    <input type="checkbox" value="cenar" name="aficiones" id="aficiones"/> Cenar 
+                    <input type="checkbox" value="copas" name="aficiones" id="aficiones"/> Copas 
+				</fieldset>
+				</br>
+				<label class="error errorAficiones" type="text" id="errorAficiones"></label>
+            </div>
+			
+			<div class="botones">
+				<input type="submit" value="Enviar"/>
+			</div>
+
+			<div id="mensaje"></div>
+		</form>
+	</body>
+</html>
