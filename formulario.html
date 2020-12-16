@@ -1,0 +1,180 @@
+<!doctype html>
+<html>
+	<head>
+		<meta name="author" content="Raquel Alcázar Mesia" />
+		<meta charset="utf-8" />
+		<title>Práctica 2</title>
+		<link rel="stylesheet" type="text/css" href="./css/formulario.css">
+		<script src="jquery/jquery-3.5.1.js"></script>
+		<script type="text/javascript" src="./js/formulario.js"></script>
+		
+	</head>
+	<body>
+	
+		<form name="formulario">
+			<div>
+				<fieldset class="usuario">
+					<legend id="nombreUsuario">Usuario</legend>
+					<input type="button" id="registrarse" value="Registrarse"/>
+					<input type="button" id="entrar" name="entrar" value="Entrar"/>
+				</fieldset>
+				<dialog id="formRegistro">
+					<form>
+						<fieldset>
+							<label for="usuarioReg">Usuario</label>
+							<input type="text" name="usuarioReg" id="usuarioReg"/></br> <input type="text" name="errorUsuarioReg" id="errorUsuarioReg" disabled/> </br>
+							<label for="contraseniaReg">Contraseña</label>
+							<input type="password" name="contraseniaReg" id="contraseniaReg"/> </br><input type="text" name="errorContraseniaReg" id="errorContraseniaReg" disabled/></br>
+							<input type="button" id="aceptar" value="Aceptar"/>
+							<input type="button" id="cancelar" value="Cancelar"/>
+						</fieldset>
+					</form>
+				</dialog>
+				<dialog id="formEntrar">
+					<form>
+						<fieldset>
+							<label for="usuarioEnt">Usuario</label>
+							<input type="text" name="usuarioEnt" id="usuarioEnt"/></br> <input type="text" name="errorUsuarioEnt" id="errorUsuarioEnt" disabled/> </br>
+							<label for="contraseniaEnt">Contraseña</label>
+							<input type="password" name="contraseniaEnt" id="contraseniaEnt"/> </br><input type="text" name="errorContraseniaEnt" id="errorContraseniaEnt" size="28" disabled/></br>
+							<input type="button" id="aceptar2" value="Aceptar"/>
+							<input type="button" id="cancelar2" value="Cancelar"/>
+						</fieldset>
+					</form>
+				</dialog>
+			</div>
+			<div>
+				<fieldset class="definiciones">
+					<legend>Definiciones</legend>
+					<label for="palabra">Palabra</label>
+					<input type="text" id="palabra"/> </br>
+					<label for="concepto">Concepto</label>
+					<input type="text" id="concepto"/></br>
+					<input type="button" id="aniadirDef" value="Añadir Definición"/>
+					<p>Lista de Definiciones</p>
+					<dl id="def">
+					</dl>
+				</fieldset>
+			</div>
+			<div>
+				<fieldset class="localidades">
+					<legend>Nombres de Localidades</legend>
+					<label for="localidad">Localidad</label>
+					<input type="text" id="localidad"/> </br>
+					<input type="button" id="aniadirLoc" value="Añadir Localidad"/>
+					<p>Lista de Localidades ordenadas</p>
+					<ul id="lista">
+					</ul>
+				</fieldset>
+			</div>
+            <div>
+				<fieldset class="coches">
+					<legend>Listado de Coches</legend>
+					<label for="marca">Marca</label>
+					<input type="text" id="marca"/> </br>
+					<label for="modelo">Modelo</label>
+					<input type="text" id="modelo"/> </br>
+					<label for="precio">Precio</label>
+					<input type="text" id="precio"/> </br>
+					<input type="button" id="aniadirCoche" value="Añadir Coche"/>
+					<table id="tabla" border="1">
+						<thead>
+							<tr>
+								<th>Marca</th>
+								<th>Modelo</th>
+								<th>Precio</th>
+							</tr>
+						</thead>
+						<tbody>
+						</tbody>
+					</table>
+				</fieldset>
+			</div>
+            </br>
+            <div>
+				<fieldset id="comunidadesField">
+					<legend>Comunidades Autónomas</legend>
+					<select id="comunidades">
+						<option value="" selected disabled>-</option>
+						<option value="andalucia">Andalucía</option>
+						<option value="asturias">Asturias</option>
+						<option value="aragon">Aragón</option>
+						<option value="canarias">Canarias</option>
+						<option value="cantabria">Cantabria</option>
+						<option value="castillaLeon">Castilla y León</option>
+						<option value="castillaMancha">Castilla-La Mancha</option>
+						<option value="catalunya">Cataluña</option>
+						<option value="ceuta">Ceuta</option>
+						<option value="comunidadMadrid">Comunidad de Madrid</option>
+						<option value="comunidadValenciana">Comunidad Valenciana</option>
+						<option value="extremadura">Extremadura</option>
+						<option value="galicia">Galicia</option>
+						<option value="baleares">Islas Baleares</option>
+						<option value="rioja">La Rioja</option>
+						<option value="melilla">Melilla</option>
+						<option value="navarra">Navarra</option>
+						<option value="paisVasco">País Vasco</option>
+						<option value="murcia">Región de Murcia</option>
+					</select>
+					<label for="provincias">Provincias</label>
+						<select id="provincias">
+						</select>
+					<h1>Comentario sobre la comunidad autónoma</h1>
+					<div id="comentario">
+				
+					</div>
+					
+				</fieldset>
+			</div>
+            </br>
+            <div id="mensajes">
+				<p>Mensajes</p>
+				<div id="salidaMensajes">
+					<fieldset class="mensaje">
+						<h1><img src="imagenes/imagen2.png" width="40"/>Félix</h1>
+						<h2>Inicio Char</h2>
+						<p>Bienvenidos al Chat</p>
+					</fieldset>
+					<fieldset class="mensaje">
+						<h1><img src="imagenes/imagen3.png" width="40"/>Ángel</h1>
+						<h2>Comienzo Char</h2>
+						<p>Chat interactivo de Interfaces en 2º DAW IES Leonardo da Vinci</p>
+					</fieldset>
+				</div>
+				<input type="button" id="aniadirMen" value="Añadir mensaje"/>
+				<dialog id="formMen">
+					<form>
+						<fieldset>
+							<label for="titulo">Título</label>
+							<input type="text" name="titulo" id="titulo" size="45"/></br> <input type="text" name="errorTitulo" id="errorTitulo" disabled/> </br>
+							<label for="comentario">Comentario</label></br>
+							<textarea name="comentario" id="comentario" rows="10" cols="40" > </textarea></br><input type="text" name="errorComentario" id="errorComentario" size="30" disabled/></br>
+							
+							<input type="radio" name="imagen" value="imagenes/imagen1.png" checked/> 
+							<img src="imagenes/imagen1.png" width="40"/></br>
+							<input type="radio" name="imagen" value="imagenes/imagen2.png"/>
+							<img src="imagenes/imagen2.png" width="50"/></br>
+							<input type="radio" name="imagen" value="imagenes/imagen3.png"/>
+							<img src="imagenes/imagen3.png" width="50"/></br>
+							<input type="radio" name="imagen" value="imagenes/imagen4.png"/>
+							<img src="imagenes/imagen4.png" width="50"/></br>
+							<input type="radio" name="imagen" value="imagenes/imagen5.png"/>
+							<img src="imagenes/imagen5.png" width="40"/></br>
+							<input type="radio" name="imagen" value="imagenes/imagen6.png"/>
+							<img src="imagenes/imagen6.png" width="40"/></br>
+							
+							</br><input type="button" id="aceptar3" value="Aceptar"/>
+							<input type="button" id="cancelar3" value="Cancelar"/>
+						</fieldset>
+					</form>
+				</dialog>
+            </div>
+            
+		</form>
+	</body>
+</html>
+
+
+
+
+
