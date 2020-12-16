@@ -25,6 +25,14 @@ function inicio(){
 
 	$("#comunidades").trigger("change");
 }
+function verFormMen(){
+	$("#titulo").val("");
+	$("#comentario").val("");
+	$("#errorTitulo").val("");
+	$("#errorComentario").val("");
+	
+	$("#formMen").show();
+}
 
 function validarMensaje(){
 	var titulo=$("#titulo").val();
